@@ -17,11 +17,11 @@ public :
 			cin >> promtm;
 			return promtm;
 		}
-		else
+		else if(_prompting == "d")
 		{
-			return "\nEnter a number within the bounds: ";
+			return "\nEnter a number within the bounds ";
 		}
-
+		
 	}
 
 	string errorm(string _errorm)
@@ -34,10 +34,11 @@ public :
 			cin >> errorm;
 			return errorm;
 		}
-		else
+		else if (_errorm == "d")
 		{
 			return "\nValue out of bounds, try again: ";
 		}
+		
 
 	}
 
@@ -51,10 +52,11 @@ public :
 			cin >> up;
 			return up;
 		}
-		else
+		else if (_upperbound == "d")
 		{
 			return 100;
 		}
+		
 	}
 
 	int lowm(string _lowerbound)
@@ -67,10 +69,11 @@ public :
 			cin >> low;
 			return low;
 		}
-		else
+		else if (_lowerbound == "d")
 		{
 			return 1;
 		}
+		
 	}
 
 
